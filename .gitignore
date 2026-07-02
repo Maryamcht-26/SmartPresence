@@ -1,1 +1,11 @@
 node_modules
+backend/venv310/
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+frontendAdmin-Prof/node_modules/
+frontend-student/node_modules/
+**/node_modules/
+**/__pycache__/
+*.pyc
+.env
