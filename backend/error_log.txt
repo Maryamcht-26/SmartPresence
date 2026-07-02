@@ -1,0 +1,1100 @@
+
+[2026-05-19 21:12:59.436704] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:03.364905] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:10.199259] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:17.957364] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:27.152439] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:34.418823] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:34.876172] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:35.387812] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:35.647035] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:36.624976] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:37.565957] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:41.242117] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:42.687254] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:43.763959] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:45.808350] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:48.452964] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:48.920131] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:49.360556] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:13:49.850037] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+
+[2026-05-19 21:14:06.552033] DELETE ERROR: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+Traceback (most recent call last):
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.RaiseException: ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\SmartPresencePWA_latest_Maryam\backend\app\routes\admin\emploi_routes.py", line 149, in delete_emploi
+    db.execute(text("""
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\orm\session.py", line 2258, in _execute_internal
+    result = conn.execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\PC\AppData\Local\Programs\Python\Python310\lib\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.InternalError: (psycopg2.errors.RaiseException) ERREUR:  Groupe incohérent (attendu: <NULL>)
+CONTEXT:  fonction PL/pgSQL check_seance_coherence(), ligne 20 à RAISE
+
+[SQL: 
+            UPDATE seance 
+            SET creneau_groupe_id = NULL 
+            WHERE niveau_id = %(cid)s
+        ]
+[parameters: {'cid': 1}]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
