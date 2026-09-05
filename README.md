@@ -142,10 +142,12 @@ cd frontend-student && npm run build        # output in dist/
 cd frontendAdmin-Prof && npm run build      # output in dist/
 ```
 
-## Author
+## Authors
 
-**Maryam Chtioui** — end-of-year project (PFA), École Nationale des Sciences Appliquées
-d'Oujda (ENSAO).
+- **Hanane Aissaoui**
+- **Yassmina Ait-ben-Addi**
+
+End-of-year project (PFA) — École Nationale des Sciences Appliquées d'Oujda (ENSAO).
 
 ---
 
@@ -292,7 +294,9 @@ cd frontend-student && npm run build        # sortie dans dist/
 cd frontendAdmin-Prof && npm run build      # sortie dans dist/
 ```
 
-### Auteur
+### Auteurs
 
-**Maryam Chtioui** — projet de fin d'année (PFA), École Nationale des Sciences Appliquées
-d'Oujda (ENSAO).
+- **Hanane Aissaoui**
+- **Yassmina Ait-ben-Addi**
+
+Projet de fin d'année (PFA) — École Nationale des Sciences Appliquées d'Oujda (ENSAO).
