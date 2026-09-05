@@ -146,6 +146,7 @@ cd frontendAdmin-Prof && npm run build      # output in dist/
 
 - **Hanane Aissaoui**
 - **Yassmina Ait-ben-Addi**
+- **Maryam Chtioui**
 
 End-of-year project (PFA) — École Nationale des Sciences Appliquées d'Oujda (ENSAO).
 
@@ -298,5 +299,6 @@ cd frontendAdmin-Prof && npm run build      # sortie dans dist/
 
 - **Hanane Aissaoui**
 - **Yassmina Ait-ben-Addi**
+- **Maryam Chtioui**
 
 Projet de fin d'année (PFA) — École Nationale des Sciences Appliquées d'Oujda (ENSAO).
